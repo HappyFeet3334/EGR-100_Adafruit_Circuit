@@ -63,3 +63,9 @@ void running(uint32_t color){
   strip.show();
 }
 
+void test0(uint32_t color){
+  for(int i=0;i<NUM_LED;i++){
+    strip.setPixelColor(i,color);
+    strip.show();
+  }
+}
