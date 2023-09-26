@@ -6,11 +6,10 @@
 #define LED_PIN 0
 #define NUM_LED 12
 
-Adafruit_NeoPixel strip(NUM_LED, LED_PIN, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel strip(NUM_LED, LED_PIN);
 
 void setup(){
   strip.begin();
-  strip.show();
 }
 
 void loop(){
