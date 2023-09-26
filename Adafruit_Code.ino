@@ -1,5 +1,5 @@
 #include <Adafruit_NeoPixel.h>
-#include<Adafruit_Code.ino>
+#include<Functions.ino>
 #ifdef __AVR__
  #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
 #endif
