@@ -1,5 +1,5 @@
-#ifndef LED_FUNCTIONS_H
-#define LED_FUNCTIONS_H
+#ifndef  GLOBAL_H
+#define GLOBAL_H
 
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
