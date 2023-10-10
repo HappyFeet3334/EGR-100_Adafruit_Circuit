@@ -57,3 +57,42 @@ void run2(uint32_t color)
   strip.setPixelColor(11,strip.Color(0,0,0));
   strip.show();
 }
+// sets all the LEDs to a random color
+void IDK(){
+  for(int i=0;i<strip.numPixels();i++){
+    strip.setPixelColor(i,strip.Color(random(0,255),random(0,255),random(0,255)));
+    strip.show();
+    delay(50);
+  }  
+}
+// flashes white with a green led going around the LED ring
+void old_flim(uint32_t color){
+  for(int k=0;k<strip.numPixels();k++){
+    for(int i=0;i<strip.numPixels();i++){
+    strip.setPixelColor(i,strip.Color(0,0,0,255));
+    strip.setPixelColor(k,color);
+   }  
+   strip.show();
+   delay(50);
+   for(int i=0;i<strip.numPixels();i++){
+    strip.setPixelColor(i,strip.Color(0,0,0,0));
+   }
+   strip.show();  
+   delay(50);
+  }
+}
+//flashes white really fast
+void fire_alarm(){
+    for(int k=0;k<strip.numPixels();k++){
+    for(int i=0;i<strip.numPixels();i++){
+    strip.setPixelColor(i,strip.Color(0,0,0,255));
+   }  
+   strip.show();
+   delay(25);
+   for(int i=0;i<strip.numPixels();i++){
+    strip.setPixelColor(i,strip.Color(0,0,0,0));
+   }
+   strip.show();  
+   delay(25);
+  }
+}
