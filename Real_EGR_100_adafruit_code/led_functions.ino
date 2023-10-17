@@ -58,7 +58,7 @@ void run2(uint32_t color)
   strip.show();
 }
 // sets all the LEDs to a random color
-void IDK(){
+void Random_RGB_Val(){
   for(int i=0;i<strip.numPixels();i++){
     strip.setPixelColor(i,strip.Color(random(0,255),random(0,255),random(0,255)));
     strip.show();

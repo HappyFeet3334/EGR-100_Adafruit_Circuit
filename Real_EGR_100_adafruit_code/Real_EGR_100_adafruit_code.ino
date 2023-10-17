@@ -10,12 +10,12 @@ void setup() {
 void loop() {
   //colorWipe(strip.Color(255,   0,   0)     , 50); 
   loading(strip.Color(0,0,255)    ,50);     //Calls the loading LED pattern from led_functions.ino
+  delay(320); // waits 320 milliseconds 
+  clap(strip.Color(0,255,0)   ,50);     //Calls the clap LED pattern from led_functions.ino
   delay(320);
-  clap(strip.Color(0,255,0)   ,50);
+  run2(strip.Color(255,0,0));       //Calls the run2 LED pattern from led_functions.ino
   delay(320);
-  run2(strip.Color(255,0,0));
-  delay(320);
-  IDK();
+  Random_RGB_Val();
   delay(320);
   old_flim(strip.Color(0,255,0));
   delay(320);
