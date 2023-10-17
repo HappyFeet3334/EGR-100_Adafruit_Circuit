@@ -15,10 +15,10 @@ void loop() {
   delay(320);
   run2(strip.Color(255,0,0));       //Calls the run2 LED pattern from led_functions.ino
   delay(320);
-  Random_RGB_Val();
+  Random_RGB_Val();     //Calls the Random_RGB_Val LED pattern from led_functions.ino
   delay(320);
-  old_flim(strip.Color(0,255,0));
+  old_flim(strip.Color(0,255,0));     //Calls the old_flim LED pattern from led_functions.ino
   delay(320);
-  fire_alarm();
+  fire_alarm();       //Calls the fire_alarm LED pattern from led_functions.ino
   delay(500);
 }
